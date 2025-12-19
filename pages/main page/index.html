@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Masterpiece - Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Step 1: Background Mesh -->
+    <div class="bg-mesh bg-mesh-1"></div>
+    <div class="bg-mesh bg-mesh-2"></div>
+
+    <!-- Step 2: Header -->
+    <header class="header glass">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon">
+                <span>Code Masterpiece</span>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Tech Stack</a>
+                <a href="../postlist page/index.html" class="nav-link">Blog Dev Diary</a>
+                <a href="#" class="nav-link">Computer Science</a>
+                <a href="../my page/index.html" class="nav-link">My Daily</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <img src="../../icons/search icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <div class="avatar-placeholder">MS</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <!-- Step 3: Hero Section -->
+        <section class="hero reveal">
+            <div class="hero-content">
+                <h1 class="hero-title">Coding the Future,<br>Designing Tomorrow</h1>
+                <p class="hero-subtitle">Master the art of code with our interactive platform.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="location.href='../my page/index.html'">About Me</button>
+                    <button class="btn btn-outline" onclick="location.href='../quest page/index.html'">My Quests</button>
+                </div>
+            </div>
+            <div class="hero-widgets">
+                <div class="glass widget-card profile-widget">
+                    <div class="widget-header">
+                        <div class="widget-avatar">MS</div>
+                        <div>
+                            <div class="widget-name">Mangosteen</div>
+                            <button class="btn-text" onclick="location.href='../my page/index.html'">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass widget-card quest-widget" onclick="location.href='../quest page/index.html'" style="cursor: pointer;">
+                    <div class="widget-title">Daily/Weekly Quest</div>
+                    <div class="progress-circles">
+                        <div class="circle-progress">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="circle-progress">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="40, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <span class="percentage">40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Dashboard Section -->
+        <section class="dashboard reveal">
+            <div class="glass dash-card profile-stats">
+                <div class="level-info">
+                    <span class="label">Level</span>
+                    <span class="level-number">123</span>
+                </div>
+                <div class="xp-bar-container">
+                    <div class="xp-info">
+                        <span>XP Progress</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="xp-bar-bg">
+                        <div class="xp-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="glass dash-card streak-stats">
+                <div class="streak-header">
+                    <div class="streak-number">15</div>
+                    <div class="streak-label">Days Streak</div>
+                </div>
+                <div class="contribution-grid">
+                    <!-- 7x5 grid generated by JS or static -->
+                    <div class="contrib-cell "></div><div class="contrib-cell "></div><div class="contrib-cell"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div>
+                    <div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div>
+                    <div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell active"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div>
+                    <div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div>
+                    <div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div><div class="contrib-cell"></div>
+                </div>
+                <div class="next-reward">
+                    <span>Next Reward</span>
+                    <div class="reward-bar-bg"><div class="reward-bar" style="width: 60%"></div></div>
+                </div>
+            </div>
+            <div class="glass dash-card total-players">
+                <div class="chart-header">
+                    <h3>Total Players</h3>
+                    <span class="counter" data-target="20234874">0</span>
+                </div>
+                <div class="chart-container">
+                    <svg class="line-chart" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+                                <stop offset="0%" stop-color="rgba(255, 255, 255, 0.2)"/>
+                                <stop offset="100%" stop-color="rgba(255, 255, 255, 0)"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M0,80 Q100,70 200,50 T400,40 T600,60 T800,30 T1000,20" fill="url(#chartGradient)" stroke="#fff" stroke-width="2" />
+                        <line x1="0" y1="15" x2="1000" y2="15" stroke="rgba(255,255,255,0.1)" stroke-dasharray="5,5" />
+                        <line x1="0" y1="50" x2="1000" y2="50" stroke="rgba(255,255,255,0.1)" stroke-dasharray="5,5" />
+                        <line x1="0" y1="85" x2="1000" y2="85" stroke="rgba(255,255,255,0.1)" stroke-dasharray="5,5" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 5: Post Grid Section -->
+        <section class="posts reveal">
+            <div class="section-header">
+                <h2>Mangosteen's Best</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                    <button class="filter-btn" data-filter="css">CSS</button>
+                    <button class="filter-btn" data-filter="js">JS</button>
+                </div>
+            </div>
+            <div class="post-grid">
+                <!-- 8 Cards -->
+                <article class="glass post-card" data-category="other" onclick="location.href='../postdetail page/detail page/what-is-development.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Development" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 19, 2025</span>
+                        <h3>What is Development?</h3>
+                        <p class="excerpt">An introductory look into the world of software development, covering the basics of coding, problem-solving, and the software lifecycle.</p>
+                        <div class="card-footer">
+                            <span class="tag">Tech</span>
+                            <span class="views">👁 1.2k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="other" onclick="location.href='../postdetail page/detail page/the-future-of-ai.html'">
+                    <div class="card-image">
+                        <img src="../../images/ai.svg" alt="AI" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 18, 2025</span>
+                        <h3>The Future of AI</h3>
+                        <p class="excerpt">Predicting the next big trends in artificial intelligence and how they will impact various industries over the coming decade.</p>
+                        <div class="card-footer">
+                            <span class="tag">AI</span>
+                            <span class="views">👁 980</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="css" onclick="location.href='../postdetail page/detail page/css-grid-mastery.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="CSS" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 17, 2025</span>
+                        <h3>CSS Grid Mastery</h3>
+                        <p class="excerpt">Mastering the CSS Grid layout system to create complex, responsive web designs with ease and precision.</p>
+                        <div class="card-footer">
+                            <span class="tag">CSS</span>
+                            <span class="views">👁 2.5k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="js" onclick="location.href='../postdetail page/detail page/js-event-loop.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="JS" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 16, 2025</span>
+                        <h3>JS Event Loop</h3>
+                        <p class="excerpt">Understanding the JavaScript event loop, call stack, and task queues to write more efficient and non-blocking code.</p>
+                        <div class="card-footer">
+                            <span class="tag">JS</span>
+                            <span class="views">👁 1.8k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="js" onclick="location.href='../postdetail page/detail page/react-server-components.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="React" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 15, 2025</span>
+                        <h3>React Server Components</h3>
+                        <p class="excerpt">Deep dive into RSC and how it changes the way we build React applications, moving logic to the server.</p>
+                        <div class="card-footer">
+                            <span class="tag">React</span>
+                            <span class="views">👁 3.1k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="other" onclick="location.href='../postdetail page/detail page/design-systems-101.html'">
+                    <div class="card-image">
+                        <img src="../../images/design.svg" alt="Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 14, 2025</span>
+                        <h3>Design Systems 101</h3>
+                        <p class="excerpt">A comprehensive guide to building and maintaining a scalable design system for your product.</p>
+                        <div class="card-footer">
+                            <span class="tag">Design</span>
+                            <span class="views">👁 1.5k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="other" onclick="location.href='../postdetail page/detail page/web-accessibility.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="Accessibility" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 13, 2025</span>
+                        <h3>Web Accessibility</h3>
+                        <p class="excerpt">Essential practices and tools to ensure your website is accessible to all users, including those with disabilities.</p>
+                        <div class="card-footer">
+                            <span class="tag">A11y</span>
+                            <span class="views">👁 850</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="other" onclick="location.href='../postdetail page/detail page/performance-tips.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Performance" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 12, 2025</span>
+                        <h3>Performance Tips</h3>
+                        <p class="excerpt">Practical techniques to optimize your web application's performance, from lazy loading to code splitting.</p>
+                        <div class="card-footer">
+                            <span class="tag">Perf</span>
+                            <span class="views">👁 2.1k</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon-sm">
+                    <span>Code Masterpiece</span>
+                </div>
+                <p class="copyright">© 2025 Code Masterpiece. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Masterpiece - Modern Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements for Glassmorphism -->
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+    <div class="ambient-light light-3"></div>
+
+    <!-- Header (GNB) -->
+    <header class="header glass">
+        <div class="container header-container">
+            <div class="logo">Code Masterpiece</div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#" class="nav-link">Tech Stack</a></li>
+                    <li><a href="#" class="nav-link">Blog Dev Diary</a></li>
+                    <li><a href="#" class="nav-link">Computer Science</a></li>
+                    <li><a href="#" class="nav-link">My Daily</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search...">
+                    <span class="shortcut-hint">⌘K</span>
+                </div>
+                <div class="user-menu">
+                    <button class="user-profile-btn glass-btn">
+                        <span class="user-avatar">AL</span>
+                        <span class="user-name">Aiden Lee</span>
+                        <span class="chevron">▼</span>
+                    </button>
+                    <div class="dropdown-menu glass">
+                        <a href="#" class="dropdown-item">
+                            <span class="icon">👤</span> My Page
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span class="icon">⚙️</span> Settings
+                        </a>
+                        <div class="divider"></div>
+                        <a href="#" class="dropdown-item danger">
+                            <span class="icon">🚪</span> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Content 1: Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Fun like a game.<br><span class="gradient-text">No more boring study!</span></h1>
+                    <div class="quest-card glass">
+                        <div class="quest-header">
+                            <span class="quest-label">🔥 Daily Quest Progress</span>
+                            <span class="quest-value">2/3</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 66%;"></div>
+                        </div>
+                        <p class="quest-desc">Complete 1 more quest to keep your streak!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content 2: Dashboard Section -->
+        <section class="dashboard-section">
+            <div class="container">
+                <div class="dashboard-grid">
+                    <!-- Profile Card -->
+                    <div class="card glass profile-card">
+                        <div class="card-header">
+                            <div class="profile-img-large">AL</div>
+                            <div class="profile-details">
+                                <h3 class="profile-name">Aiden Lee</h3>
+                                <span class="profile-badge">Lv.10 Code Master</span>
+                            </div>
+                        </div>
+                        <div class="xp-section">
+                            <div class="xp-info">
+                                <span>XP Progress</span>
+                                <span class="xp-percent">80%</span>
+                            </div>
+                            <div class="xp-bar-bg">
+                                <div class="xp-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="profile-actions">
+                            <button class="btn btn-primary">Subscribe</button>
+                            <button class="btn btn-glass icon-only">🔔</button>
+                        </div>
+                    </div>
+
+                    <!-- Streak Card -->
+                    <div class="card glass streak-card">
+                        <div class="card-top">
+                            <h3 class="card-title">Current Streak</h3>
+                            <span class="fire-icon">🔥</span>
+                        </div>
+                        <div class="streak-number">15 <span class="days">Days</span></div>
+                        <div class="streak-reward">
+                            <div class="reward-icon">🎁</div>
+                            <div class="reward-text">Next Reward: <strong>5 Days left</strong></div>
+                        </div>
+                    </div>
+
+                    <!-- Visitor Graph Card -->
+                    <div class="card glass graph-card">
+                        <h3 class="card-title">Visitor Graph</h3>
+                        <div class="graph-container">
+                            <div class="bar-group">
+                                <div class="bar" data-height="40%"></div>
+                                <span class="day">M</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar" data-height="60%"></div>
+                                <span class="day">T</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar" data-height="50%"></div>
+                                <span class="day">W</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar" data-height="80%"></div>
+                                <span class="day">T</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar" data-height="70%"></div>
+                                <span class="day">F</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar active" data-height="90%"></div>
+                                <span class="day">S</span>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar" data-height="65%"></div>
+                                <span class="day">S</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content 3: Slogan Banner -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="glass-banner">
+                    <h2 class="banner-text">"Gamify your learning journey."</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content 4: Editor's Pick -->
+        <section class="editors-pick-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Editor's Pick</h2>
+                    <div class="category-filters glass-pill-container">
+                        <button class="filter-btn active" data-filter="All">All</button>
+                        <button class="filter-btn" data-filter="Tech">Tech</button>
+                        <button class="filter-btn" data-filter="Design">Design</button>
+                        <button class="filter-btn" data-filter="Career">Career</button>
+                    </div>
+                </div>
+                
+                <div class="post-grid">
+                    <!-- Post Items with Thumbnails -->
+                    <article class="card glass post-card" data-category="Tech">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/frontend.svg" alt="React Hooks" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag tech">Tech</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Understanding React Hooks</h3>
+                            <p class="post-excerpt">A deep dive into useState and useEffect for modern React development.</p>
+                            <div class="post-meta">
+                                <span>10 min read</span>
+                                <span>•</span>
+                                <span>Dec 19</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="Design">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/design.svg" alt="Minimalism" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag design">Design</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Minimalism in 2025</h3>
+                            <p class="post-excerpt">Why less is still more in modern UI design and how to achieve it.</p>
+                            <div class="post-meta">
+                                <span>5 min read</span>
+                                <span>•</span>
+                                <span>Dec 18</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="CS">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/backend.svg" alt="Data Structures" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag cs">CS</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Data Structures 101</h3>
+                            <p class="post-excerpt">Linked Lists vs Arrays: When to use what and why it matters.</p>
+                            <div class="post-meta">
+                                <span>15 min read</span>
+                                <span>•</span>
+                                <span>Dec 17</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="Career">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/ai.svg" alt="Career" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag career">Career</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Junior to Senior</h3>
+                            <p class="post-excerpt">The path to becoming a senior developer involves more than just code.</p>
+                            <div class="post-meta">
+                                <span>8 min read</span>
+                                <span>•</span>
+                                <span>Dec 16</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- More items for grid effect -->
+                    <article class="card glass post-card" data-category="Tech">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/frontend.svg" alt="CSS Grid" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag tech">Tech</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">CSS Grid Mastery</h3>
+                            <p class="post-excerpt">Building complex layouts with ease using modern CSS techniques.</p>
+                            <div class="post-meta">
+                                <span>12 min read</span>
+                                <span>•</span>
+                                <span>Dec 15</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="Daily">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/ai.svg" alt="Setup" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag daily">Daily</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">My Coding Setup</h3>
+                            <p class="post-excerpt">Tools and hardware I use every day to stay productive.</p>
+                            <div class="post-meta">
+                                <span>6 min read</span>
+                                <span>•</span>
+                                <span>Dec 14</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="Tech">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/frontend.svg" alt="TypeScript" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag tech">Tech</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">TypeScript Tips</h3>
+                            <p class="post-excerpt">Advanced types you should know to write safer code.</p>
+                            <div class="post-meta">
+                                <span>9 min read</span>
+                                <span>•</span>
+                                <span>Dec 13</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card glass post-card" data-category="Design">
+                        <div class="post-thumbnail">
+                            <div class="thumb-overlay"></div>
+                            <img src="../../images/design.svg" alt="Color Theory" style="width:100%; height:100%; object-fit:cover;">
+                            <span class="category-tag design">Design</span>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Color Theory</h3>
+                            <p class="post-excerpt">How to choose the right palette for your next project.</p>
+                            <div class="post-meta">
+                                <span>7 min read</span>
+                                <span>•</span>
+                                <span>Dec 12</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Code Masterpiece</div>
+                <p class="copyright">© 2025 Mangosteen. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Contact Us</a>
+                <a href="#">Share</a>
+                <a href="#">Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

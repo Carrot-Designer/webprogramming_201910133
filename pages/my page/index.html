@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Code Masterpiece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-mesh bg-mesh-1"></div>
+    <div class="bg-mesh bg-mesh-2"></div>
+
+    <header class="header glass">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon">
+                <span>Code Masterpiece</span>
+            </div>
+            <nav class="nav">
+                <a href="../main page/index.html" class="nav-link">Tech Stack</a>
+                <a href="../postlist page/index.html" class="nav-link">Blog Dev Diary</a>
+                <a href="#" class="nav-link">Computer Science</a>
+                <a href="#" class="nav-link active">My Daily</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <img src="../../icons/search icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <div class="avatar-placeholder">AL</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout mypage-main">
+        <!-- Step 1: Profile Banner -->
+        <section class="profile-header glass reveal">
+            <div class="profile-banner-inner">
+                <div class="profile-left">
+                    <div class="avatar-large">MA</div>
+                    <div class="profile-text">
+                        <h1 class="profile-name">Mangosteen</h1>
+                        <div class="profile-stats-mini">
+                            <span>Total Visits <strong>12,450</strong></span>
+                            <span>Today's Commits <strong>8</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <div class="level-badge-container">
+                        <span class="level-text">Lv.123 Knight of Hotfix</span>
+                        <span class="badge-icon-sm"></span>
+                    </div>
+                    <div class="profile-action-btns">
+                        <button class="btn btn-primary">Delet Profile</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Posts Tab & List Section -->
+        <section class="tabs-section reveal">
+            <div class="tab-menu">
+                <div class="tab-item active">Latest Posts</div>
+                <div class="tab-item">Liked/Saved Posts</div>
+                <div class="tab-item">Commented Posts</div>
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All Posts</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="design">Design System</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                </div>
+                <div class="sort-dropdown glass" id="sort-dropdown">
+                    <span id="current-sort">Latest</span>
+                    <span class="arrow">▼</span>
+                    <ul class="dropdown-menu glass hidden">
+                        <li data-sort="latest">Latest</li>
+                        <li data-sort="views">Views</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="vertical-post-list">
+                <!-- Post Cards -->
+                <article class="glass post-card-horizontal" data-category="design" onclick="location.href='../postdetail page/detail page/what-is-design-work.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/design.svg" alt="Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>What is Design Work?</h3>
+                        <p class="excerpt">Understanding the fundamental principles of design in the digital age. How to create user-centric interfaces.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.21</span>
+                        <span>👁 1.2k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/mastering-css-grid-layouts.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Mastering CSS Grid Layouts</h3>
+                        <p class="excerpt">A complete guide to building complex 2D layouts using CSS Grid. From basics to advanced techniques.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.20</span>
+                        <span>👁 980</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/deep-dive-into-es2025.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Deep Dive into ES2025</h3>
+                        <p class="excerpt">Exploring the latest JavaScript features including pattern matching, pipeline operators, and immutable data structures.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.19</span>
+                        <span>👁 2.5k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/react-server-components-explained.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>React Server Components Explained</h3>
+                        <p class="excerpt">Understanding the paradigm shift in React. How Server Components improve performance and simplify data fetching.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.18</span>
+                        <span>👁 1.8k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/web-accessibility-essentials.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Web Accessibility Essentials</h3>
+                        <p class="excerpt">Practical tips for making your website accessible to all users. ARIA roles, semantic HTML, and keyboard navigation.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.17</span>
+                        <span>👁 850</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/frontend-trends-in-2025.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Frontend Trends in 2025</h3>
+                        <p class="excerpt">A look at the emerging technologies and frameworks shaping the future of frontend development.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.16</span>
+                        <span>👁 3.2k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="design" onclick="location.href='../postdetail page/detail page/scalable-design-systems.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/design.svg" alt="Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Scalable Design Systems</h3>
+                        <p class="excerpt">Best practices for creating and maintaining a design system that grows with your product. Tokens and components.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.15</span>
+                        <span>👁 1.5k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="backend" onclick="location.href='../postdetail page/detail page/optimizing-node.js-apps.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/backend.svg" alt="Backend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Optimizing Node.js Apps</h3>
+                        <p class="excerpt">Techniques for improving the performance and reliability of your Node.js services. Profiling and memory management.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.14</span>
+                        <span>👁 1.1k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="backend" onclick="location.href='../postdetail page/detail page/graphql-vs-rest-a-comparison.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/backend.svg" alt="Backend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>GraphQL vs REST: A Comparison</h3>
+                        <p class="excerpt">Analyzing the pros and cons of GraphQL and REST APIs. When to use which technology for your backend.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.13</span>
+                        <span>👁 2.1k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="backend" onclick="location.href='../postdetail page/detail page/containerization-with-docker.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/backend.svg" alt="Backend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Containerization with Docker</h3>
+                        <p class="excerpt">A beginner's guide to using Docker for development and deployment. Writing Dockerfiles and using Compose.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.12</span>
+                        <span>👁 1.9k</span>
+                    </div>
+                </article>
+                <!-- Additional Cards for Pagination -->
+                <article class="glass post-card-horizontal" data-category="design" onclick="location.href='../postdetail page/detail page/typography-in-ui-design.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/design.svg" alt="Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Typography in UI Design</h3>
+                        <p class="excerpt">How to choose and pair fonts effectively. Understanding hierarchy, spacing, and readability in interfaces.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.11</span>
+                        <span>👁 1.3k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="frontend" onclick="location.href='../postdetail page/detail page/vue.js-composition-api.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Vue.js Composition API</h3>
+                        <p class="excerpt">Leveraging the power of the Composition API for better code reuse and organization in Vue 3 applications.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.10</span>
+                        <span>👁 2.2k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="backend" onclick="location.href='../postdetail page/detail page/building-microservices.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/backend.svg" alt="Backend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Building Microservices</h3>
+                        <p class="excerpt">Strategies for decomposing monolithic applications into microservices. Communication patterns and data consistency.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.09</span>
+                        <span>👁 1.7k</span>
+                    </div>
+                </article>
+                <article class="glass post-card-horizontal" data-category="ai" onclick="location.href='../postdetail page/detail page/effective-prompt-engineering.html'">
+                    <div class="thumb-sm">
+                        <img src="../../images/ai.svg" alt="AI" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="post-info-h">
+                        <h3>Effective Prompt Engineering</h3>
+                        <p class="excerpt">Techniques for getting the best results from Large Language Models. Zero-shot, few-shot, and chain-of-thought.</p>
+                    </div>
+                    <div class="post-meta-h">
+                        <span>2023.09.08</span>
+                        <span>👁 3.5k</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <!-- Pagination buttons will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Step 3: Daily Quest & Activity Graph -->
+        <section class="quest-activity-grid reveal">
+            <!-- Left: Daily Quest -->
+            <div class="glass quest-card">
+                <h2 class="card-title-lg">Daily Quest</h2>
+                <p class="card-desc">Complete daily tasks to earn XP and badges.</p>
+                
+                <div class="quest-list">
+                    <div class="quest-item completed">
+                        <div class="check-circle"></div>
+                        <span class="quest-text">Daily Attendance</span>
+                    </div>
+                    <div class="quest-item completed">
+                        <div class="check-circle"></div>
+                        <span class="quest-text">Read 1 Article</span>
+                    </div>
+                    <div class="quest-item">
+                        <div class="check-circle"></div>
+                        <span class="quest-text">Leave a Comment</span>
+                    </div>
+                    <div class="quest-item">
+                        <div class="check-circle"></div>
+                        <span class="quest-text">Share a Post</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="location.href='../quest page/index.html'">My Quests</button>
+            </div>
+
+            <!-- Right: Activity Graph -->
+            <div class="glass activity-card">
+                <div class="graph-header">
+                    <h2 class="card-title-lg">Activity</h2>
+                    <div class="filter-tag-sm active">Weekly</div>
+                </div>
+                
+                <div class="graph-area">
+                    <div class="y-axis">
+                        <span>500</span>
+                        <span>400</span>
+                        <span>300</span>
+                        <span>200</span>
+                        <span>100</span>
+                        <span>0</span>
+                    </div>
+                    <svg class="graph-line-svg" viewBox="0 0 600 200" preserveAspectRatio="none">
+                        <!-- Simple line graph path -->
+                        <path class="graph-path" d="M0,150 L100,120 L200,160 L300,80 L400,100 L500,40 L600,60" />
+                        <!-- Data points -->
+                        <circle class="graph-point" cx="0" cy="150" />
+                        <circle class="graph-point" cx="100" cy="120" />
+                        <circle class="graph-point" cx="200" cy="160" />
+                        <circle class="graph-point" cx="300" cy="80" />
+                        <circle class="graph-point" cx="400" cy="100" />
+                        <circle class="graph-point" cx="500" cy="40" />
+                        <circle class="graph-point" cx="600" cy="60" />
+                    </svg>
+                    <div class="x-axis">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Reward Dashboard (From Post List) -->
+        <section class="search-reward-section reveal">
+            <div class="reward-dashboard glass">
+                <div class="reward-profile">
+                    <div class="reward-avatar">M</div>
+                    <div class="reward-info">
+                        <span class="reward-name">Mangosteen</span>
+                        <div class="reward-level-bar"><div class="fill" style="width: 70%"></div></div>
+                        <span class="reward-level-text">Level 123</span>
+                    </div>
+                </div>
+                <div class="reward-center">
+                     <div class="circle-progress-large">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="70, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span class="percentage-large">70%</span>
+                    </div>
+                </div>
+                <div class="reward-right">
+                    <h3>Next Reward</h3>
+                    <div class="badge-list">
+                        <div class="badge-item-sm">The Master</div>
+                        <div class="badge-item-sm">Code Ninja</div>
+                        <div class="badge-item-sm">Bug Hunter</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 5: Best Posts (From Post List) -->
+        <section class="best-posts reveal active">
+            <div class="post-grid">
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/the-art-of-clean-code.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Clean Code" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 10, 2025</span>
+                        <h3>The Art of Clean Code</h3>
+                        <p class="excerpt">Writing code that is easy to understand, maintain, and extend is an art form. Here are the principles you need to know.</p>
+                        <div class="card-footer">
+                            <span class="tag">Best Practice</span>
+                            <span class="views">👁 5.2k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/full-stack-roadmap.html'">
+                    <div class="card-image">
+                        <img src="../../images/ai.svg" alt="Full Stack" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 08, 2025</span>
+                        <h3>Full Stack Roadmap</h3>
+                        <p class="excerpt">A complete guide to becoming a full stack developer in 2025, covering frontend, backend, and devops.</p>
+                        <div class="card-footer">
+                            <span class="tag">Career</span>
+                            <span class="views">👁 4.8k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/system-design-basics.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="System Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 05, 2025</span>
+                        <h3>System Design Basics</h3>
+                        <p class="excerpt">Learn how to design large-scale distributed systems. We cover load balancing, caching, and database sharding.</p>
+                        <div class="card-footer">
+                            <span class="tag">System Design</span>
+                            <span class="views">👁 3.9k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/algorithms-and-data-structures.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Algorithms" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 01, 2025</span>
+                        <h3>Algorithms & Data Structures</h3>
+                        <p class="excerpt">Why you still need to know algorithms in 2025. A look at practical applications of common data structures.</p>
+                        <div class="card-footer">
+                            <span class="tag">CS</span>
+                            <span class="views">👁 6.1k</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon-sm">
+                    <span>Code Masterpiece</span>
+                </div>
+                <p class="copyright"> 2025 Code Masterpiece. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

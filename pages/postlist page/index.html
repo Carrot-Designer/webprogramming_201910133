@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Masterpiece - Dev Diary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-mesh bg-mesh-1"></div>
+    <div class="bg-mesh bg-mesh-2"></div>
+
+    <header class="header glass">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon">
+                <span>Code Masterpiece</span>
+            </div>
+            <nav class="nav">
+                <a href="../main page/index.html" class="nav-link">Tech Stack</a>
+                <a href="#" class="nav-link active">Blog Dev Diary</a>
+                <a href="#" class="nav-link">Computer Science</a>
+                <a href="../my page/index.html" class="nav-link">My Daily</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <img src="../../icons/search icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <div class="avatar-placeholder">AL</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout postlist-main">
+        <!-- Step 1: Hero Box -->
+        <section class="hero-box-section reveal">
+            <div class="glass hero-box">
+                <h1 class="hero-title-large">Programming language</h1>
+                <p class="hero-desc">Learn the basics of languages and how to use them to create efficient and scalable software.</p>
+                <div class="hero-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- Step 2: Filters & Grid -->
+        <section class="controls reveal">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="design">Design System</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+            </div>
+            <div class="sort-dropdown glass" id="sort-dropdown">
+                <span id="current-sort">Latest</span>
+                <span class="arrow">▼</span>
+                <ul class="dropdown-menu glass hidden">
+                    <li data-sort="latest">Latest</li>
+                    <li data-sort="views">Views</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="post-grid-section reveal">
+            <div class="post-grid" id="post-grid">
+                <!-- Repeated Cards (Will be populated by JS or static) -->
+                <!-- Keeping some static for initial view, JS will append more -->
+                <article class="glass post-card" data-category="design" onclick="location.href='../postdetail page/detail page/understanding-glassmorphism-in-2025.html'">
+                    <div class="card-image">
+                        <img src="../../images/design.svg" alt="Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 19, 2025</span>
+                        <h3>Understanding Glassmorphism in 2025</h3>
+                        <p class="excerpt">A deep dive into the physics-based rendering techniques used in modern UI design. We explore how to achieve realistic glass effects using CSS backdrop-filter and SVG filters for better performance.</p>
+                        <div class="card-footer">
+                            <span class="tag">Design</span>
+                            <span class="views">👁 1.2k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="frontend" onclick="location.href='../postdetail page/detail page/react-19-whats-new.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 18, 2025</span>
+                        <h3>React 19: What's New?</h3>
+                        <p class="excerpt">Exploring the new concurrent features and server-side capabilities introduced in the latest version. Learn how to leverage Server Components for better performance.</p>
+                        <div class="card-footer">
+                            <span class="tag">Frontend</span>
+                            <span class="views">👁 2.5k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="graphics" onclick="location.href='../postdetail page/detail page/optimizing-webgl-performance.html'">
+                    <div class="card-image">
+                        <img src="../../images/design.svg" alt="Graphics" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 17, 2025</span>
+                        <h3>Optimizing WebGL Performance</h3>
+                        <p class="excerpt">Tips and tricks for rendering complex 3D scenes in the browser without dropping frames. We discuss geometry instancing and shader optimization.</p>
+                        <div class="card-footer">
+                            <span class="tag">Graphics</span>
+                            <span class="views">👁 800</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="backend" onclick="location.href='../postdetail page/detail page/event-driven-architecture.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Backend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 16, 2025</span>
+                        <h3>Event-Driven Architecture</h3>
+                        <p class="excerpt">Moving beyond request-response: how to build systems that react to events in real-time using Kafka and RabbitMQ.</p>
+                        <div class="card-footer">
+                            <span class="tag">Backend</span>
+                            <span class="views">👁 1.5k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" data-category="ai" onclick="location.href='../postdetail page/detail page/ai-in-web-development.html'">
+                    <div class="card-image">
+                        <img src="../../images/ai.svg" alt="AI" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 15, 2025</span>
+                        <h3>AI in Web Development</h3>
+                        <p class="excerpt">How artificial intelligence is changing the way we build and test web applications. From code generation to automated testing agents.</p>
+                        <div class="card-footer">
+                            <span class="tag">AI & ML</span>
+                            <span class="views">👁 3.1k</span>
+                        </div>
+                    </div>
+                </article>
+                 <article class="glass post-card" data-category="frontend" onclick="location.href='../postdetail page/detail page/mastering-css-subgrid.html'">
+                    <div class="card-image">
+                        <img src="../../images/frontend.svg" alt="Frontend" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 14, 2025</span>
+                        <h3>Mastering CSS Subgrid</h3>
+                        <p class="excerpt">Aligning nested content to the parent grid has never been easier. Learn how Subgrid revolutionizes layout design.</p>
+                        <div class="card-footer">
+                            <span class="tag">Frontend</span>
+                            <span class="views">👁 1.8k</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Step 3: Search & Reward Section -->
+        <section class="search-reward-section reveal">
+            <div class="search-container">
+                <div class="big-search-bar glass">
+                    <input type="text" placeholder="Search for articles...">
+                    <button class="btn-search">Search</button>
+                </div>
+                <div class="search-tags">
+                    <span class="tag">#React</span>
+                    <span class="tag">#CSS</span>
+                    <span class="tag">#JavaScript</span>
+                    <span class="tag">#Design</span>
+                </div>
+            </div>
+
+            <div class="reward-dashboard glass">
+                <div class="reward-profile">
+                    <div class="reward-avatar">D</div>
+                    <div class="reward-info">
+                        <span class="reward-name">Developer_242</span>
+                        <div class="reward-level-bar"><div class="fill" style="width: 70%"></div></div>
+                        <span class="reward-level-text">Level 12</span>
+                    </div>
+                </div>
+                <div class="reward-center">
+                     <div class="circle-progress-large">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span class="percentage-large">60%</span>
+                    </div>
+                </div>
+                <div class="reward-right">
+                    <h3>Next Reward</h3>
+                    <div class="badge-list">
+                        <div class="badge-item-sm">The Beginner</div>
+                        <div class="badge-item-sm">The Explorer</div>
+                        <div class="badge-item-sm">The Architect</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Mangosteen's Best -->
+        <section class="best-posts reveal">
+            <div class="section-header">
+                <h2>Mangosteen's Best</h2>
+            </div>
+            <div class="post-grid">
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/the-art-of-clean-code.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Clean Code" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 10, 2025</span>
+                        <h3>The Art of Clean Code</h3>
+                        <p class="excerpt">Writing code that is easy to understand, maintain, and extend is an art form. Here are the principles you need to know.</p>
+                        <div class="card-footer">
+                            <span class="tag">Best Practice</span>
+                            <span class="views">👁 5.2k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/full-stack-roadmap.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Full Stack" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 08, 2025</span>
+                        <h3>Full Stack Roadmap</h3>
+                        <p class="excerpt">A complete guide to becoming a full stack developer in 2025, covering frontend, backend, and devops.</p>
+                        <div class="card-footer">
+                            <span class="tag">Career</span>
+                            <span class="views">👁 4.8k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/system-design-basics.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="System Design" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 05, 2025</span>
+                        <h3>System Design Basics</h3>
+                        <p class="excerpt">Learn how to design large-scale distributed systems. We cover load balancing, caching, and database sharding.</p>
+                        <div class="card-footer">
+                            <span class="tag">System Design</span>
+                            <span class="views">👁 3.9k</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass post-card" onclick="location.href='../postdetail page/detail page/algorithms-and-data-structures.html'">
+                    <div class="card-image">
+                        <img src="../../images/backend.svg" alt="Algorithms" style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="date">Dec 01, 2025</span>
+                        <h3>Algorithms & Data Structures</h3>
+                        <p class="excerpt">Why you still need to know algorithms in 2025. A look at practical applications of common data structures.</p>
+                        <div class="card-footer">
+                            <span class="tag">CS</span>
+                            <span class="views">👁 6.1k</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon-sm">
+                    <span>Code Masterpiece</span>
+                </div>
+                <p class="copyright">© 2025 Code Masterpiece. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

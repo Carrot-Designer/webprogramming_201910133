@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Glassmorphism - Code Masterpiece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-mesh bg-mesh-1"></div>
+    <div class="bg-mesh bg-mesh-2"></div>
+
+    <header class="header glass">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon">
+                <span>Code Masterpiece</span>
+            </div>
+            <nav class="nav">
+                <a href="../main page/index.html" class="nav-link">Tech Stack</a>
+                <a href="../postlist page/index.html" class="nav-link active">Blog Dev Diary</a>
+                <a href="#" class="nav-link">Computer Science</a>
+                <a href="../my page/index.html" class="nav-link">My Daily</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <img src="../../icons/search icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <div class="avatar-placeholder">AL</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <article class="article-container">
+            <aside class="sidebar-left reveal">
+                <div class="toc glass">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#intro" class="active">Introduction</a></li>
+                        <li><a href="#physics">The Physics of Glass</a></li>
+                        <li><a href="#css-implementation">CSS Implementation</a></li>
+                        <li><a href="#accessibility">Accessibility Concerns</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn glass">♥ 124</button>
+                    <button class="share-btn glass">Share</button>
+                </div>
+            </aside>
+
+            <div class="article-content reveal">
+                <header class="article-header">
+                    <div class="tags">
+                        <span class="tag">Design System</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <h1 class="article-title">Understanding Glassmorphism in 2025</h1>
+                    <div class="article-meta">
+                        <div class="author">
+                            <div class="avatar-placeholder">AL</div>
+                            <span>Aiden Lee</span>
+                        </div>
+                        <span class="separator">•</span>
+                        <span class="date">Dec 19, 2025</span>
+                        <span class="separator">•</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                </header>
+
+                <div class="featured-image glass">
+                    <img src="../../images/design.svg" alt="Glassmorphism" style="width:100%; height:100%; object-fit:cover; border-radius: inherit;">
+                </div>
+
+                <div class="content-body">
+                    <section id="intro">
+                        <p class="lead">Glassmorphism has evolved from a mere trend into a sophisticated design language. In 2025, we're seeing a shift towards more physically accurate rendering and performance-optimized implementations.</p>
+                        <p>The key to modern glassmorphism isn't just the blur—it's the subtle interplay of light, border reflections, and noise textures that create a sense of depth and tactility.</p>
+                    </section>
+
+                    <section id="physics">
+                        <h2>The Physics of Glass</h2>
+                        <p>Real glass refracts light and distorts what's behind it. In CSS, we approximate this using <code>backdrop-filter</code>. However, to make it feel "premium", we need to consider the edges.</p>
+                        <blockquote>
+                            "Good design is obvious. Great design is transparent." — Joe Sparano
+                        </blockquote>
+                        <p>We use multiple layers of shadows and borders to simulate the thickness of the glass pane.</p>
+                    </section>
+
+                    <section id="css-implementation">
+                        <h2>CSS Implementation</h2>
+                        <p>Here is the core CSS snippet we use for the Code Masterpiece design system:</p>
+                        <pre><code class="language-css">.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}</code></pre>
+                        <p>Notice the very low opacity on the background. This allows the mesh gradients behind the element to shine through, creating that signature "deep" look.</p>
+                    </section>
+
+                    <section id="accessibility">
+                        <h2>Accessibility Concerns</h2>
+                        <p>While beautiful, glassmorphism can pose contrast issues. It is crucial to ensure that text layered on top of glass elements maintains a contrast ratio of at least 4.5:1.</p>
+                        <ul>
+                            <li>Use lighter text colors on dark glass.</li>
+                            <li>Increase the blur amount to reduce background noise interference.</li>
+                            <li>Provide a solid background fallback for browsers that don't support backdrop-filter.</li>
+                        </ul>
+                    </section>
+
+                    <section id="conclusion">
+                        <h2>Conclusion</h2>
+                        <p>Glassmorphism is here to stay, but it requires a delicate touch. Overuse can lead to performance bottlenecks and visual clutter. Use it sparingly to highlight key UI elements.</p>
+                    </section>
+                </div>
+
+                <div class="article-footer glass">
+                    <h3>Enjoyed this article?</h3>
+                    <p>Subscribe to my newsletter for more design and code insights.</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" class="glass-input">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon-sm">
+                    <span>Code Masterpiece</span>
+                </div>
+                <p class="copyright">© 2025 Code Masterpiece. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

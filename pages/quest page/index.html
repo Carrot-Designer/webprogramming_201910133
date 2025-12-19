@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests - Code Masterpiece</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg-mesh bg-mesh-1"></div>
+    <div class="bg-mesh bg-mesh-2"></div>
+
+    <header class="header glass">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon">
+                <span>Code Masterpiece</span>
+            </div>
+            <nav class="nav">
+                <a href="../main page/index.html" class="nav-link">Tech Stack</a>
+                <a href="../postlist page/index.html" class="nav-link">Blog Dev Diary</a>
+                <a href="#" class="nav-link">Computer Science</a>
+                <a href="../my page/index.html" class="nav-link">My Daily</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-bar glass-input">
+                    <img src="../../icons/search icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="profile-icon">
+                    <div class="avatar-placeholder">AL</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <section class="quest-hero reveal">
+            <div class="hero-text">
+                <h1 class="page-title">Daily Quests</h1>
+                <p class="page-subtitle">Complete tasks, earn XP, and level up your coding skills.</p>
+            </div>
+            <div class="glass overall-progress">
+                <div class="progress-info">
+                    <span>Daily Progress</span>
+                    <span class="progress-percent">66%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 66%"></div>
+                </div>
+                <div class="xp-gain">
+                    <span>+450 XP Earned Today</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="quest-grid">
+            <!-- Daily Quests -->
+            <section class="quest-column reveal">
+                <h2 class="section-title">Today's Tasks</h2>
+                <div class="quest-list">
+                    <div class="glass quest-card completed">
+                        <div class="quest-status">
+                            <div class="checkbox checked">✓</div>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Read 1 Article</h3>
+                            <p>Stay updated with the latest tech trends.</p>
+                            <div class="quest-reward">
+                                <span class="xp-badge">+50 XP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass quest-card completed">
+                        <div class="quest-status">
+                            <div class="checkbox checked">✓</div>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Commit Code</h3>
+                            <p>Push at least one commit to GitHub.</p>
+                            <div class="quest-reward">
+                                <span class="xp-badge">+100 XP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass quest-card">
+                        <div class="quest-status">
+                            <div class="checkbox"></div>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Solve Algorithm</h3>
+                            <p>Complete one LeetCode medium problem.</p>
+                            <div class="quest-reward">
+                                <span class="xp-badge">+200 XP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weekly Challenges -->
+            <section class="quest-column reveal">
+                <h2 class="section-title">Weekly Challenges</h2>
+                <div class="quest-list">
+                    <div class="glass quest-card challenge">
+                        <div class="challenge-header">
+                            <span class="challenge-tag">Hard</span>
+                            <span class="time-left">2 days left</span>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Build a Glassmorphism UI</h3>
+                            <p>Create a responsive dashboard using only CSS glassmorphism techniques.</p>
+                            <div class="challenge-progress">
+                                <div class="cp-bar-bg"><div class="cp-bar-fill" style="width: 80%"></div></div>
+                                <span class="cp-text">4/5 Steps</span>
+                            </div>
+                            <div class="quest-reward">
+                                <span class="xp-badge gold">+1000 XP</span>
+                                <span class="item-badge">🏆 Badge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass quest-card challenge">
+                        <div class="challenge-header">
+                            <span class="challenge-tag">Medium</span>
+                            <span class="time-left">5 days left</span>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Refactor Legacy Code</h3>
+                            <p>Improve performance of an old project by 20%.</p>
+                            <div class="challenge-progress">
+                                <div class="cp-bar-bg"><div class="cp-bar-fill" style="width: 0%"></div></div>
+                                <span class="cp-text">0/1 Project</span>
+                            </div>
+                            <div class="quest-reward">
+                                <span class="xp-badge silver">+500 XP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Rewards Shop Preview -->
+        <section class="rewards-section reveal">
+            <div class="section-header">
+                <h2 class="section-title">Rewards Shop</h2>
+                <button class="btn-link">Visit Shop &rarr;</button>
+            </div>
+            <div class="rewards-grid">
+                <div class="glass reward-card">
+                    <div class="reward-icon">🎨</div>
+                    <h3>Dark Theme Pro</h3>
+                    <p>Unlock advanced color schemes.</p>
+                    <button class="btn btn-sm btn-outline">2000 XP</button>
+                </div>
+                <div class="glass reward-card">
+                    <div class="reward-icon">🚀</div>
+                    <h3>Profile Booster</h3>
+                    <p>Feature your profile on the main page.</p>
+                    <button class="btn btn-sm btn-outline">5000 XP</button>
+                </div>
+                <div class="glass reward-card">
+                    <div class="reward-icon">🎓</div>
+                    <h3>Mentorship Session</h3>
+                    <p>30 min call with a senior dev.</p>
+                    <button class="btn btn-sm btn-outline">10000 XP</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../icons/logo.svg" alt="Code Masterpiece" class="logo-icon-sm">
+                    <span>Code Masterpiece</span>
+                </div>
+                <p class="copyright">© 2025 Code Masterpiece. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

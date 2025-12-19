@@ -1,0 +1,8 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e1e1e"/>
+  <path d="M50 150 L100 100 L150 150 L100 200 Z" fill="none" stroke="#8cc84b" stroke-width="2"/>
+  <path d="M150 150 L200 100 L250 150 L200 200 Z" fill="none" stroke="#8cc84b" stroke-width="2"/>
+  <path d="M250 150 L300 100 L350 150 L300 200 Z" fill="none" stroke="#8cc84b" stroke-width="2"/>
+  <text x="200" y="250" font-family="monospace" font-size="24" fill="#8cc84b" text-anchor="middle">{ Backend: API }</text>
+  <rect x="50" y="50" width="300" height="200" rx="5" fill="none" stroke="#333" stroke-width="4"/>
+</svg>
